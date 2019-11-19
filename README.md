@@ -35,9 +35,9 @@ c. 블로깅 - 커뮤니티 (사진 및 영상 저장, 게시, 공유)
 
 ## 3. 구현
 
-### 목표
+### 목표 사용자 1명 
 
-- GIROK: CRU
+- GIROK: CRU/D
 - BLOG: CRUD
 - M:N DB
 - Social Media tagging 
@@ -102,6 +102,4 @@ getstream.io
 ## 유사기능
 
 - A year in pixels : 무드 트래커, 하루에 픽셀 하나, 해당 날짜의 기분을 표시하는 것 
-
-
 
