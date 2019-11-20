@@ -4,10 +4,8 @@
 - Contents.md
 - `Frontend`
 - `Backend`
-
 - `Meeting log`
-  - `Feedback`
-  - `Discussions`
+  - `meeting{YY-MM-DD}`
 
 <hr> contents list
 
