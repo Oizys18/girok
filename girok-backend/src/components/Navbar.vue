@@ -1,6 +1,7 @@
 <template>
   <div>
-		<h2>Navbar</h2>
+    <router-link to="/today">Today</router-link>  |
+    <router-link to="/thirtydays">ThirtyDays</router-link>
 	</div>
 </template>
 
