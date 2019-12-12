@@ -1,7 +1,8 @@
 <template>
   <div>
-		<h2>Footer</h2>
-    
+    <button>share</button>
+    <button>calendar</button>
+    <button>top</button>
 	</div>
 </template>
 

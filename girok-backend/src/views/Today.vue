@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>ss</h1>
     <h1>{{ getDate }}</h1>
     <Todo v-for="todo in todos" :key="todo.id" :todo="todo" :hashtags="hashtags"/>
     <div>
@@ -60,14 +59,15 @@ export default {
         return {id:Date.now(), tag:hash}
       })
       this.hashtags.push(newHashs)
-
-      this.todos.push({
+      if (this.newTitle) {
+        this.todos.push({
         id:Date.now(),
         title: this.newTitle,
         hashtags: newHashs.map(hash => {
           return hash.id
-        }),
-      })
+        })})
+      }
+      
 
       this.newHash = ''
       this.newTitle = ''
