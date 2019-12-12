@@ -24,7 +24,6 @@ export default {
       for (let i=0; i <= 27; i++) {
         let ii = this.lastdays[i].id
         let r = this.lastdays[i].rate
-        console.log(r)
         document.getElementById(`${ii}`).style.backgroundColor  = '#'+rainbow.colourAt(r)
       }
     }
