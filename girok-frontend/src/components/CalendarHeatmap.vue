@@ -1,6 +1,6 @@
 <template>
   <div>
-		<h2>calendarHeatmap</h2>
+    <h2>calendarHeatmap</h2>
     <div id="container">
       <div class="box" :id="day.id" v-for="day in lastdays" :key="day.id"></div>
     </div>
@@ -9,6 +9,7 @@
 
 <script>
 import Rainbow from '../rainbowvis'
+
 
 export default {
   name: 'CalendarHeatmap',

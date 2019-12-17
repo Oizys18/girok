@@ -58,12 +58,14 @@ export default {
       this.showForm = true
     },
     submitForm() {
-      this.items.push({
+      if (this.newContent) {
+        this.items.push({
         id:Date.now(),
         content: this.newContent,
         checked: false,
         todo: this.todo.id
-      })
+        })
+      }
       this.newContent = ''
       this.showForm = !this.showForm
     },
