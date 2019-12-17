@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>{{ getDate }}</h1>
+    <div>
+      <h1>{{ getDate }}</h1>
+      <Sidebar/>
+    </div>
     <Todo v-for="todo in todos" :key="todo.id" :todo="todo" :hashtags="hashtags"/>
     <div>
       <button @click="getForm" v-if="!showForm">+</button>
@@ -20,11 +23,13 @@
 <script>
 // @ is an alias to /src
 import Todo from '@/components/Todo.vue'
+import Sidebar from '@/components/Sidebar.vue'
 
 export default {
   name: 'today',
   components: {
-    Todo
+    Todo,
+    Sidebar
   },
   data: function () {
     return {

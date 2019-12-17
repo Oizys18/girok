@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Last Thirty Days</h1>
+    <div>
+      <h1>Last Thirty Days</h1>
+      <Sidebar/>
+    </div>
     <CalendarHeatmap :lastdays="lastdays"/>
     <div>
       <h4>recent top3 #tag</h4>
@@ -14,11 +17,14 @@
 <script>
 // @ is an apas to /src
 import CalendarHeatmap from '@/components/CalendarHeatmap.vue'
+import Sidebar from '@/components/Sidebar.vue'
+
 
 export default {
   name: 'thirtydays',
   components: {
-    CalendarHeatmap
+    CalendarHeatmap,
+    Sidebar
   },
   data: function () {
     return {

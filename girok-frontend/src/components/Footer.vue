@@ -1,8 +1,8 @@
 <template>
   <div>
     <button>share</button>
-    <button>calendar</button>
-    <button>top</button>
+    <button><router-link to="/thirtydays">ThirtyDays</router-link></button>
+    <button><router-link to="/today">Today</router-link></button>
 	</div>
 </template>
 
