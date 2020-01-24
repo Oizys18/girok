@@ -5,7 +5,6 @@
     <input type="password" v-model="signinPW" placeholder="Password" /><br />
     <p></p>
     <button @click="signin">Sign In</button>
-
     <h3>Sign up</h3>
     <input type="text" v-model="signupEM" placeholder="Email" /><br />
     <input type="password" v-model="signupPW" placeholder="Password" /><br />
